@@ -1,0 +1,331 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#22AADD"
+    android:theme="@style/FullscreenTheme"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="center"
+        android:id="@+id/temp"
+        android:layout_margin="0dp">
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="center"
+        android:id="@+id/video"
+        android:layout_margin="0dp">
+
+        <VideoView
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center"
+            android:id="@+id/videoView" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|center"
+            android:background="@android:color/white"
+            android:alpha="0.01"
+            android:id="@+id/cover" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="center"
+        android:id="@+id/menu"
+        android:layout_margin="0dp">
+
+        <TextView android:alpha="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/app_name"
+            android:id="@+id/name"
+            android:textSize="100sp"
+            android:layout_marginTop="80sp"
+            android:layout_gravity="top|center_horizontal"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:singleLine="true"
+            android:shadowColor="#333333AA"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="5"
+            android:textColor="@android:color/white" />
+
+        <Button android:alpha="0"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:background="@drawable/button_orange"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="80sp"
+            android:layout_marginEnd="140sp"
+            android:layout_marginRight="140sp"
+            android:text="@string/ranking"
+            android:elevation="2dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/rank" />
+
+        <Button android:alpha="0"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:background="@drawable/button_green"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="80sp"
+            android:layout_marginStart="140sp"
+            android:layout_marginLeft="140sp"
+            android:text="@string/achieve"
+            android:elevation="2dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/achieve"/>
+
+        <Button android:alpha="0"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/button_blue"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="60sp"
+            android:text="@string/start"
+            android:elevation="2dp"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/start"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="center"
+        android:id="@+id/main"
+        android:visibility="invisible">
+
+        <TextView android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/ftimesback"
+            android:textSize="160sp"
+            android:layout_marginTop="80sp"
+            android:layout_gravity="top|center_horizontal"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:singleLine="true"
+            android:shadowColor="#333333AA"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/ftimes"
+            android:textSize="160sp"
+            android:layout_marginTop="80sp"
+            android:layout_gravity="top|center_horizontal"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:singleLine="true"
+            android:shadowColor="#333333AA"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="5"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/highscore"
+            android:id="@+id/fhigh"
+            android:textSize="20sp"
+            android:layout_marginTop="280sp"
+            android:layout_gravity="top|center_horizontal"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:singleLine="true"
+            android:shadowColor="#333333AA"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="5"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/fdura"
+            android:textSize="40sp"
+            android:layout_marginTop="320sp"
+            android:layout_gravity="top|center_horizontal"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:singleLine="true"
+            android:shadowColor="#333333AA"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="5"
+            android:textColor="@android:color/white" />
+
+        <ImageView android:alpha="0"
+            android:layout_width="160sp"
+            android:layout_height="160sp"
+            android:layout_gravity="center|center"
+            android:layout_marginTop="120sp"
+            android:layout_marginEnd="100sp"
+            android:layout_marginRight="100sp"
+            android:background="@drawable/animation_do"
+            android:id="@+id/ani_do" />
+
+        <Button android:alpha="0"
+            android:layout_width="160sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center"
+            android:layout_marginTop="240sp"
+            android:layout_marginEnd="100sp"
+            android:layout_marginRight="100sp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:background="@android:color/transparent"
+            android:text="@string/todo"
+            android:id="@+id/text_do"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:shadowColor="#333333AA"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="5"
+            android:textColor="@android:color/white" />
+
+        <ImageView android:alpha="0"
+            android:layout_width="160sp"
+            android:layout_height="160sp"
+            android:layout_gravity="center|center"
+            android:layout_marginTop="120sp"
+            android:layout_marginStart="100sp"
+            android:layout_marginLeft="100sp"
+            android:background="@drawable/animation_notdo"
+            android:id="@+id/ani_notdo" />
+
+        <Button android:alpha="0"
+            android:layout_width="160sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center"
+            android:layout_marginTop="240sp"
+            android:layout_marginStart="100sp"
+            android:layout_marginLeft="100sp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:background="@android:color/transparent"
+            android:text="@string/nottodo"
+            android:id="@+id/text_notdo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:shadowColor="#333333AA"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="5"
+            android:textColor="@android:color/white" />
+
+        <Button android:alpha="0"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:background="@drawable/button_pink"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="80sp"
+            android:layout_marginEnd="140sp"
+            android:layout_marginRight="140sp"
+            android:text="@string/back"
+            android:elevation="2dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/back" />
+
+        <Button android:alpha="0"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:background="@drawable/button_purple"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="80sp"
+            android:layout_marginStart="140sp"
+            android:layout_marginLeft="140sp"
+            android:text="@string/share"
+            android:elevation="2dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/share"/>
+
+        <Button android:alpha="0"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:background="@drawable/button_red"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="60sp"
+            android:text="@string/restart"
+            android:elevation="2dp"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/restart"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="#000000"
+        android:visibility="visible"
+        android:id="@+id/title">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal|top" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:textSize="24sp"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal|bottom"
+            android:focusableInTouchMode="false" />
+
+    </FrameLayout>
+
+</FrameLayout>

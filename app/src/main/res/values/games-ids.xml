@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Google Play game services IDs.
+Save this file as res/values/games-ids.xml in your project.
+-->
+<resources>
+    <string name="app_id" translatable="false">1051427152793</string>
+    <string name="achievement_first_toss" translatable="false">CgkImcfE78weEAIQAg</string>
+    <string name="achievement_flip_master" translatable="false">CgkImcfE78weEAIQAw</string>
+    <string name="achievement_flip_monster" translatable="false">CgkImcfE78weEAIQBA</string>
+    <string name="achievement_flip_god" translatable="false">CgkImcfE78weEAIQBQ</string>
+    <string name="achievement_you_must_be_cheating" translatable="false">CgkImcfE78weEAIQBg</string>
+    <string name="achievement_highly_toss" translatable="false">CgkImcfE78weEAIQBw</string>
+    <string name="achievement_im_michael_jordan" translatable="false">CgkImcfE78weEAIQCA</string>
+    <string name="achievement_i_can_fly" translatable="false">CgkImcfE78weEAIQCQ</string>
+    <string name="achievement_homerun" translatable="false">CgkImcfE78weEAIQCg</string>
+    <string name="achievement_thats_funny" translatable="false">CgkImcfE78weEAIQCw</string>
+    <string name="leaderboard_flip_times_ranking" translatable="false">CgkImcfE78weEAIQAQ</string>
+</resources>
